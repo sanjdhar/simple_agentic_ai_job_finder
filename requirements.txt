@@ -1,0 +1,5 @@
+crewai
+python-dotenv
+requests
+litellm
+google-search-results
