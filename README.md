@@ -67,6 +67,37 @@ An AI-powered job search system designed for professionals in any field. Uses sp
    mkdir -p job-posts
    ```
 
+## ⚙️ Setup config.py for your job target search
+
+### Customize Your Search
+
+Edit `config.py` to customize your job search preferences:
+
+```python
+JOB_CONFIG = {
+    "title": "Software Engineer",
+    "alternative_titles": ["SDE", "Staff Engineer", "Full Stack Developer", "Application Developer"],
+    "years": "1-3",
+    "level": "beginner/intermediate",
+    "required_skills": ["React", "JavaScript", "Python"],
+    "preferred_skills": ["Cloud", "AI tools"],
+    "location_preference": "remote",
+    "salary_expectation": "$70,000 - $110,000",
+    "target_companies": "Meta, Microsoft, Amazon, Google, Apple"
+}
+```
+
+### Search Type Details
+
+| Search Type      | Best For                      | Output Files                                  |
+| ---------------- | ----------------------------- | --------------------------------------------- |
+| Standard         | General job searching         | `job-results-2.json`, `new-job-analysis-2.md` |
+| Salary Focused   | Salary is primary concern     | `salary-focused-results.md`                   |
+| Company Targeted | Preferred companies           | `company-targeted-results.md`                 |
+| Entry Level      | New graduates/career changers | `entry-level-results.md`                      |
+| Quick            | Urgent job searching          | `quick-search-results.md`                     |
+| Full             | Comprehensive with networking | All files + `new-job-post-2.md`               |
+
 ## 🎯 Usage
 
 ### Interactive Mode (Recommended)
@@ -95,37 +126,6 @@ Edit the `search_type` variable in `main.py` to choose:
 - `"entry_level"` - Entry-level positions
 - `"quick"` - Fast search
 - `"full"` - Complete search with messaging
-
-## ⚙️ Configuration
-
-### Customize Your Search
-
-Edit `config.py` to customize your job search preferences:
-
-```python
-JOB_CONFIG = {
-    "title": "Oracle Database Engineer",
-    "alternative_titles": ["Oracle DBA", "Database Administrator"],
-    "years": "1-3",
-    "level": "beginner/intermediate",
-    "required_skills": ["Oracle", "SQL", "PL/SQL"],
-    "preferred_skills": ["Performance Tuning", "Oracle RAC"],
-    "location_preference": "remote",
-    "salary_expectation": "$70,000 - $110,000",
-    "target_companies": "Oracle, Microsoft, Amazon, Google, IBM"
-}
-```
-
-### Search Type Details
-
-| Search Type      | Best For                      | Output Files                                  |
-| ---------------- | ----------------------------- | --------------------------------------------- |
-| Standard         | General job searching         | `job-results-2.json`, `new-job-analysis-2.md` |
-| Salary Focused   | Salary is primary concern     | `salary-focused-results.md`                   |
-| Company Targeted | Preferred companies           | `company-targeted-results.md`                 |
-| Entry Level      | New graduates/career changers | `entry-level-results.md`                      |
-| Quick            | Urgent job searching          | `quick-search-results.md`                     |
-| Full             | Comprehensive with networking | All files + `new-job-post-2.md`               |
 
 ## 📁 Output Files
 

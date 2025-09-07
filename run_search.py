@@ -10,7 +10,7 @@ import sys
 def display_menu():
     """Display the search type menu"""
     print("\n" + "="*60)
-    print("🔍 GENERIC AI JOB SEARCH TOOL")
+    print("🔍 SIMPLE AGENTIC AI JOB FINDER")
     print("="*60)
     print("\nAvailable Search Types:")
     print("1. Standard Search - Comprehensive job search with analysis")
