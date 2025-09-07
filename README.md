@@ -43,8 +43,8 @@ An AI-powered job search system designed for professionals in any field. Uses sp
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
-   cd generic-job-search
+   git clone https://github.com/sanjdhar/simple_agentic_ai_job_finder.git
+   cd simple_agentic_ai_job_finder
    ```
 
 2. **Install dependencies**:
@@ -59,7 +59,7 @@ An AI-powered job search system designed for professionals in any field. Uses sp
    ```env
    SERPER_API_KEY=your_serpapi_key_here
    GEMINI_API_KEY=your_gemini_api_key_here
-   GEMINI_MODEL=gemini-1.5-flash
+   GEMINI_MODEL=gemini-2.5-flash-lite
    ```
 
 4. **Create output directory**:
